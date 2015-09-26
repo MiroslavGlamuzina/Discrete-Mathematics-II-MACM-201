@@ -1,5 +1,5 @@
 # Discrete Mathematics II MACM 201
-<p>A Java project for a programmatic view of MACM 201: Discrete Mathematics II</p>  
+<h6>A Java project for a programmatic view of MACM 201: Discrete Mathematics II</h6>  
 
 <p><strong>MACM 201: Discrete Mathematics II</strong> is continuation of MACM 101. Topics covered include graph theory, trees, inclusion-exclusion, generating functions, recurrence relations, and optimization and matching.</p>
 
