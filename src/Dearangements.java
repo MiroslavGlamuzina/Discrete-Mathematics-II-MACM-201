@@ -1,4 +1,6 @@
-public class Dearangements {
+import java.util.Scanner;
+
+public class Dearangements extends Algorithm{
 
 	/**
 	 * @param args
@@ -11,23 +13,27 @@ public class Dearangements {
 		System.out
 				.println("d_10 = N(c[0]...c[n]) = Size! - combination(size, 1)*((size-1)!/(size)!) + combination(size, 2)*((size-2)!/(size!)) +... + combination(size, size)(0!/size!)");
 
-		double ret = Algorithm.factorial(4);
+		System.out.println("\nEnter a word you would like dearranged. . . ");
+		Scanner s = new Scanner(System.in);
+		String res = s.nextLine();
+		
+		double ret = factorial(res.length());
 		double ret2 = 0;
-		for (int i = 2; i <= 4; i++) {
+		for (int i = 2; i <= res.length(); i++) {
 		
 			if(i%2==0)
 			{
-				ret2 += 1/Algorithm.factorial(i);
+				ret2 += 1/factorial(i);
 
 			}
 			else
 			{
-				ret2 -= 1/Algorithm.factorial(i);
+				ret2 -= 1/factorial(i);
 			}
 		}
 		ret = ret*ret2;
 	
-		System.out.println("\nThere are "+(int)ret + " derangements with a SIZE 4 index");
+		System.out.println("\nThere are "+(int)ret + " derangements with a string with a length of "+ String.valueOf(res.length()));
 		
 	}
 
