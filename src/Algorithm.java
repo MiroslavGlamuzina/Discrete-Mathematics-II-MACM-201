@@ -27,4 +27,23 @@ public class Algorithm {
 		return r;
 	}
 	
+	public static int power(int value, int power)
+	{
+		int ret =value;
+		for(int i=1; i < power; i ++)
+		{
+			value*=ret;
+		}
+		return value;
+	}
+	public static double power(double value, int power)
+	{
+		double ret =value;
+		for(int i=1; i < power; i ++)
+		{
+			value*=ret;
+		}
+		return value;
+	}
+	
 }
